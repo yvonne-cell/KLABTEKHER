@@ -1,0 +1,163 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background: #000;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 20px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .hero {
+    height:94vh;
+    width:200vh;
+    color:#000; 
+    background:#A9A9A9;
+    top:0;
+    padding:40;
+    text-align:left;
+    } 
+ /* .corner-image {
+    position: absolute;
+    top: 100; /* Position the image at the top */
+    /*right:0; /* Align the image to the right corner */
+    /*width:300px; /* Set the size of the image */
+    /*height: 350px;
+     background: block;
+  } */
+  
+  #about, #skills, #portfolio, #contact , #services{
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .about-photo {
+    width:430px;
+    height:663px;
+    /*height: auto;*/
+    right:0;
+    top:0;
+    position: absolute;
+    margin-top: 20px;
+    /*border-radius: 70%;*/
+  }
+  .about-logo {
+    width: 170px; /* Set the width */
+    height: 180px; /* Set the height */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image covers the circle */
+    border: 2px solid #ccc; /* Optional: adds a border */
+    /*height: auto;*/
+    /*right:0;
+    top:0;
+    position: absolute;
+    margin-top: 20px;
+    /*border-radius: 70%;*/
+  }
+  
+  .skills-container {
+    display:flex;
+    justify-content: left;
+    gap: 20px;
+  }
+  
+  .skill {
+    background:#f4f4f4;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline;
+  }
+  .services {
+    background: #f4f4f4;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .portfolio-gallery {
+    display:block;
+    /*justify-content: center;*/
+    gap: 10px;
+  }
+  
+  .project img {
+    width:1200px;
+    height: 1000px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  .project p {
+    margin-top: 10px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  form input, form textarea {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  form button {
+    background: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+ /* #back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    display: none; /* Initially hidden */
+    /*transition: opacity 0.3s; */
+
+
+/*.backtotop:hover {
+    background-color: #0056b3;}*/
+
+
+  .footer {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .footer .social-links a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+  }
