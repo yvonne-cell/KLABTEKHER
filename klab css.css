@@ -93,7 +93,7 @@ body {
   }
   
   .portfolio-gallery {
-    display:block;
+    display:flex;
     /*justify-content: center;*/
     gap: 10px;
   }
