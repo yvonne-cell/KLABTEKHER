@@ -43,10 +43,13 @@ body {
      background: block;
   } */
   
-  #about, #skills, #portfolio, #contact , #services{
+  #about, #skills,#contact , #services{
     padding: 50px;
     text-align: center;
   }
+ #portfolio{
+  padding: 50px;  
+ }
   
   .about-photo {
     width:430px;
@@ -93,16 +96,16 @@ body {
   }
   
   .portfolio-gallery {
-    display:flex;
-    /*justify-content: center;*/
-    gap: 10px;
+   display:flex;
+    justify-content: center;
+    gap: 40px;
   }
   
   .project img {
-    width:1200px;
-    height: 1000px;
+    width:370px;
+    height: 350px;
     object-fit: cover;
-    border-radius: 5px;
+    border-radius: 15px;
   }
   
   .project p {
