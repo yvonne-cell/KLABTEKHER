@@ -25,14 +25,15 @@ body {
     text-decoration: none;
   }
   
-  .hero {
+ .hero {
     height:94vh;
     width:200vh;
     color:#000; 
     background:#d0d0d0;
     top:0;
-    padding:40;
-    text-align:left;
+    padding:1%;
+    text-align:start;
+    
     } 
  /* .corner-image {
     position: absolute;
@@ -63,17 +64,11 @@ body {
     /*border-radius: 70%;*/
   }
   .about-logo {
-    width: 170px; /* Set the width */
-    height: 180px; /* Set the height */
+    width:7%; /* Set the width */
+    height:10%px; /* Set the height */
     border-radius: 50%; /* Makes the image circular */
     object-fit: cover; /* Ensures the image covers the circle */
-    border: 2px solid #ccc; /* Optional: adds a border */
-    /*height: auto;*/
-    /*right:0;
-    top:0;
-    position: absolute;
-    margin-top: 20px;
-    /*border-radius: 70%;*/
+    border: 2px solid #ccc; /* Optional: adds a border      text-align:left;*/
   }
   
   .skills-container {
