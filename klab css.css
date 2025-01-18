@@ -54,21 +54,21 @@ body {
 
   }
   .about-photo {
-    width:70vh;
-    height:105vh;
+    width:60vh;
+    height:90vh;
     /*height: auto;*/
     right:0;
     top:0;
     position: absolute;
-    margin-top: 20px;
-    border-radius: 70%;
+    margin-top: 9%;
+    border-radius: 50%;
   }
   .about-logo {
     width:7%; /* Set the width */
     height:10%px; /* Set the height */
     border-radius: 50%; /* Makes the image circular */
     object-fit: cover; /* Ensures the image covers the circle */
-    border: 2px solid #ccc; /* Optional: adds a border      text-align:left;*/
+    border: 2% solid #ccc; /* Optional: adds a border      text-align:left;*/
   }
   
   .skills-container {
