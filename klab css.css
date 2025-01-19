@@ -86,7 +86,7 @@
   .skills-container {
     display:flex;
     justify-content: center;
-    gap:15px;
+    gap:1%;
   }
   .skill {
     /* border-radius: 5px;
