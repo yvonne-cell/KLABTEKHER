@@ -36,6 +36,7 @@ body{
     list-style:none;
     display:flex;
     gap:8%;
+    margin:0%;
   }
   
   .nav-links li a {
@@ -258,10 +259,11 @@ body{
     color: #fff;
     text-align: center;
     padding:1%;
+    margin: 0%;
   }
   
   .footer .social-links a {
     color: #fff;
-    margin: 0 1%;
+    margin: 0 0%;
     text-decoration: none;
   }
