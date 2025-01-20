@@ -1,109 +1,267 @@
- <!DOCTYPE html>
-<html lang="en">
-<head>
-   <!--<meta charset="UTF-8"> -->
-   <meta name="viewport" content=" 
-width=device-width",  
+/* styles.css */
+ body {
+    font-family: Arial, sans-serif;
+    margin:0%;
+    padding:0%;
+    background: #e6e4e4;
  
-initial-scale=1.0, maximum-scale=1.0, user-scalable=yes 
-" />  
-   <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="klab css.css">
-</head>
-<body>
-  <header>
-    <nav>
-     <!-- <div class="logo">My Portfolio</div> > -->
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li> <a href="klab about me.html">About me</a> </br></li>
-        <li><a href="#skills">Skills</a></li>
-        <li> <a href="portofolio.html">Portofolio</a> </br></li>
-        <li><a href="#contact">Contact</a></li>
-       <li> <a href="klab html services.html">Services</a></li>
-      </ul>
-    </nav>
-  </header>
-  <section class="hero">
-     <div >
-        <img src="freepik-company-logo-20250102010219dYHL.png" alt="Description of my image" class="about-logo">
-        <h1>Hi,</h1>
-      <h1>I'm </br>Yvonne Mukabera</h1>
-      <p>Front-end Developer / UI Designer
-        <p  style="background:#d4d2d2" ><b> MOTIVATIONAL ALIGNMENT</b> </br>
-        </br>As a front-end developer and UI designer, my motivation stems from the dynamic blend of creativity and </br>technology. 
-        I thrive on the challenge of transforming concepts into visually appealing and functional </br>web experiences that  enhance 
-        user interaction. Each project is an opportunity to innovate, </br>push design boundaries, and prioritize usability.
-         </div>
-            </p>
-            <img src="WhatsApp Image 2025-01-03 at 8.19.19 PM.jpeg" alt="Description of my image"  class="about-photo">  
-        </div> 
+  } 
+  @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+@media (max-width:80%) {
+body{
+   font-size:5%; /* Adjust font size for smaller screens*/
+}
+}
+  /*
+  @media only screen and (max-width:50%){
+    body { 
+    font-size: 14px; line-height: 1.4; 
+    font-family: Arial, sans-serif;
+    margin: 0%;
+    padding:0%;
+    background: #000;
+}
+   }*/
+
+  header {
+    background: #000;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding:1%;
+  }
+  
+  .nav-links {
+    list-style:none;
+    display:flex;
+    gap:8%;
+  }
+  
+  .nav-links li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .hero {
+    height:auto;
+    max-width:100%;
+    color:#000; 
+    background:#d0d0d0;
+    top:0;
+    padding:1%;
+    text-align:start;
     
-<!--<div> </div> -->
-  </section>
-</br>
-<section>
-  <div id="skills">
-    <h2>Skills</h2>
-    <h2 style="text-align:center"> <u>  Using now:</u> </h2> </br>
-    <div class="skills-container">
-        <img src="html.png" alt="Description of my image"  width="20" height="20"></br >
-      <div class="skill">HTML</div></br>
-      <img src="css.png" alt="Description of my image" width="20" height="20"></br>
-      <div class="skill">CSS</div></br>
-      <img src="python.png" alt="Description of my image"width="20" height="20"></br>
-      <div class="skill">python</div>
-    </div>
-    <h2 style="text-align:center"> <u>  Learning now:</u> </h2> </br>
-    <div class="skills-container">
-        <img src="JavaScript.png" alt="Description of my image"width="20" height="20"></br>
-      <div class="skill">JavaScript</div>
-      <img src="react.png" alt="Description of my image"width="20" height="20"></br>
-     <div class="skill">React</div>
-     <img src="figma.png" alt="Description of my image"width="20" height="20"></br>
-     <div class="skill">figma</div>
-    </div>
-    <h2 style="text-align:center"> <u>Other skills:</u> </h2> </br>
-    <div class="skills-container">
-        <img src="c++.png" alt="Description of my image"width="20" height="20"></br>
-      <div class="skill">C++</div>
-      <img src="java.png" alt="Description of my image"width="20" height="20"></br>
-     <div class="skill">java</div>
-     <img src="c.png" alt="Description of my image"width="20" height="20"></br>
-     <div class="skill">C</div>
-    </div>
-  <div class="list">
-  <h3> CERTIFICATES AND ACHIVIEMENTS</h3> </br>
-  <a href="IT ESSENTIAL.pdf" alt="IT ESSENTIAL"> IT ESSENTIAL</a> 
-  <a href="mukabera yvonne CVO.pdf" alt="mukabera yvonne CV">MY CV</a> 
-   <a href="CSS CERTIFICATE.pdf" alt="CSS CERTIFICATE"> CSS CERTIFICATE</a> 
-  <a href="FIGMA UI DESIGN CERTIFICATE.pdf" alt="FIGMA UI DESIGN CERTIFICATE">FIGMA UI DESIGN CERTIFICATE</a>  
-  <a href="HTML CERTIFICATE.pdf" alt="HTML CERTIFICATE">HTML CERTIFICATE</a> 
- <a href="mukaberayvonne diploma.pdf" alt="mukaberayvonne diploma">High School diploma</a>  
-</div>
-</div>
-</section>
-<a href="#TOP">↑ Back to Top</a>
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <form action="https://example.com/submit" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required></br>
-      <input type="email" name="email" placeholder="Your Email" required></br>
-      <textarea name="message" placeholder="Your Message" required></textarea></br>
-      <button type="submit">Send</button>
-    </form>
-  </section>
-<a href="#TOP">↑ Back to Top</a>
-  <footer class="footer">
-    <p>&copy; 2025 MYvonne. All Rights Reserved.</p>
-    <div class="social-links" >
-      <a href="https://web.whatsapp.com/" target="_blank">WhatsApp</a>
-      <a href="https://https://www.instagram.com/" target="_blank">Instagram</a>
-      <a href="https://https://github.com/yvonne-cell" target="_blank">GitHub</a>
-      <a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit" target="_blank">LinkedIn</a>
-      <a href="https://https://web.facebook.com/" target="_blank">Facebook</a>
-    </div>
-  </footer>
-</body>
-</html>
+    } 
+ /* .corner-image {
+    position: absolute;
+    top: 100; /* Position the image at the top */
+    /*right:0; /* Align the image to the right corner */
+    /*width:300px; /* Set the size of the image */
+    /*height: 350px;
+     background: block;
+  } */
+  
+  #about, #skills,#contact , #services{
+    padding: 10%;
+    text-align: center;
+  }
+  #portfolio{
+      padding:10%;
+    /*text-align: center;*/
+
+  }
+  .portfolio-gallery {
+    display:flex;
+    justify-content:center;
+    gap:5%;
+    height:auto;
+    max-width:100%;
+ 
+  }
+  .about-photo {
+    height:60%;
+    max-width:70%;
+    /*height: auto;    position:relative;*/
+    right:2%;
+    top:0%;
+    position:absolute;
+    margin-top:10%;
+    margin-left:60%;
+    border-radius: 50%;
+  }
+  .about-logo {
+    width:7%; /* Set the width */
+    height:10%; /* Set the height */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image covers the circle */
+    border: 2% solid #ccc; /* Optional: adds a border      text-align:left;*/
+
+
+  }
+  .skills-container {
+    display:flex;
+    justify-content: center;
+    gap:1%;
+  }
+  .skill {
+    /* border-radius: 5px;
+      font-weight: bold;
+    display:  flex;
+      text-align: start;
+      background:#f4f4f4;
+    padding: 10px 20px;*/
+    background-color: #fff;
+    padding:0%;
+    border: 0% solid #242222;
+    color: #0a0808;  
+  }
+  .skills{
+    display: flex;
+    justify-content: space-between; 
+  }
+  .list{
+    gap:5%;
+  }
+  .services {
+    background: #f4f4f4;
+    padding: 2% 4%;
+    border-radius: 1%;
+    font-weight: bold;
+  }
+  .hover-container {
+    position: relative;
+    display:inline;
+    height:auto;
+    max-width:100%;
+  }
+  
+  .hover-container img {
+    height:auto;
+    max-width:100%;
+    object-fit: cover;
+  }
+  
+  .hover-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height:auto;
+    max-width:100%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size:79%;
+    font-weight: bold;
+    display:inline-flex;
+    text-align: center;
+    background: rgba(19, 1, 1, 0.6); /* Semi-transparent background */
+    padding:2%;
+    border-radius:1%;
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.3s ease;
+  }
+  
+  .hover-container:hover .hover-text {
+    opacity:1; /* Show text on hover */
+  }
+ /* .hover-container {
+    position: relative;
+    display: inline-block;
+    width:55%;
+    height:40%;
+  }
+  
+  .hover-container img {
+    width:55%;
+    height: 40%;
+    object-fit: cover;
+  }
+  
+  .hover-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width:55%;
+    height:40%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 4%;
+    font-weight: bold;
+    display:inline-flex;
+    text-align: center;
+    padding: 2%;
+    border-radius: 1%;
+      .hover-container:hover .hover-text {
+    opacity:1;  Show text on hover 
+    
+  } 
+  
+      */
+  
+  
+
+  .project img {
+    height:auto;
+    max-width:100%;
+    object-fit: cover;
+    border-radius:3%;
+ 
+  }
+  
+  .project p {
+    margin-top:2%;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 8%;
+    align-items: center;
+  }
+  
+  form input, form textarea {
+    width: 80%;
+    padding: 1%;
+    border: 0% solid #ddd;
+    border-radius:0%;
+  }
+  
+  form button {
+    background: #000;
+    color: #fff;
+    padding: 1% 4%;
+    border: none;
+    gap:4%;
+    border-radius:1%;
+    cursor: pointer;
+  }
+ /* #back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    display: none; /* Initially hidden */
+    /*transition: opacity 0.3s; */
+
+
+/*.backtotop:hover {
+    background-color: #0056b3;}*/
+
+
+  .footer {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding:1%;
+  }
+  
+  .footer .social-links a {
+    color: #fff;
+    margin: 0 1%;
+    text-decoration: none;
+  }
