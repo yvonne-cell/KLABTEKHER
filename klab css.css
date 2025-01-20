@@ -1,12 +1,21 @@
-/* styles.css */
+/* styles.css 
  body {
     font-family: Arial, sans-serif;
     margin:0%;
     padding:0%;
     background: #e6e4e4;
  
-  } 
-  /*
+  } */
+  @media screen and (max-width:100%) { 
+ 
+    body { 
+    font-size: 1.5em; 
+    margin-top:0%
+    /*  
+      that will make fonts 150% larger, if you want smaller fonts on 	mobile use something like .9em for 90% smaller 
+    */ 
+    } 
+  }
   @media only screen and (max-width:50%){
     body { 
     font-size: 14px; line-height: 1.4; 
