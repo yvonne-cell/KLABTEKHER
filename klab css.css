@@ -29,7 +29,7 @@
   .nav-links {
     list-style:none;
     display:flex;
-    gap: 10%;
+    gap:2%;
   }
   
   .nav-links li a {
