@@ -7,7 +7,7 @@
  
   } 
   @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
-@media (max-width:100%) {
+@media (max-width:80%) {
 body{
    font-size:5%; /* Adjust font size for smaller screens*/
 }
@@ -81,7 +81,7 @@ body{
  
   }
   .about-photo {
-   height:auto;
+    height:auto;
     max-width:15%;
     /*height: auto;    position:relative;*/
     right:2%;
