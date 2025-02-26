@@ -1,44 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
+   <!--<meta charset="UTF-8">-->
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Project</title>
   <link rel="stylesheet" href="klab css.css">
+  <link rel="icon" type="image/x-icon" href="https://img.freepik.com/free-vector/gradient-coding-logo-template_23-2148809439.jpg?t=st=1740437629~exp=1740441229~hmac=effb209250b56f02f85e95fb5d9469875c3fb6cd68e0fe500e14cac2d34fc2cf&w=1060">
 </head>
 <body>
+  <!--
     <section class="portfolio-gallery">
         <h2>Portfolio</h2> </section>
         <div class="portfolio-gallery">
-          <div class="hover-container project img"  >
-            <img src="Fotolia_58569245_Software_Development_930_590_70.jpg" alt="Project 1" > 
+          <div class="hover-container project img"   >
+            <img src="Fotolia_58569245_Software_Development_930_590_70.JPG" alt="Project 1"> 
            <div class="hover-text">  Learning and creating projects go hand in hand, fostering growth and innovation.</br>
               Through learning, one gains This combination enhances problem-solving, critical thinking, and creativity. </br>
                Each project serves as a stepping stone, reinforcing lessons and building confidence.Embracing challenges </br>
-               during the process enables personal and professional development.  </div>
+               during the process enables personal and professional development.</div>
             <p>Project 1: learning and creating</p> 
-          </div>
+          </div>-->
+          </br></br></br></br>
           <div class="hover-container project img">
-            <img src="istockphoto-1401460590-612x612.jpg" alt="Project 2">
+            <img src="istockphoto-1401460590-612x612.JPG" alt="Project 1">
             <div class="hover-text">  
-              Blogging is a creative platform for sharing ideas, knowledge, and experiences with a global audience. </br>
-              It helps improve communication skills, build a personal brand, and connect with like-minded individuals.</br>
-               Through consistent blogging, you can showcase expertise, inspire others, and even generate income.</br> 
-               It’s an evolving medium that fosters self-expression, creativity, </br>
-               and learning while keeping readers informed and engaged.  </div>
-            <p>Project 2:blogging</p>
-          </div>
+              <p> <b> BY FILLING THE TABLE BELOW, YOUR FAMILY WILL KNOW EXACTLY WHERE YOU ARE CURRENTLY</b> </p> 
+          </div> 
+            <!--
           <div class="hover-container project img">
-            <img src="wesite design.jpg" alt="Project 3">
+            <img src="wesite design.JPG" alt="Project 3" >
             <div class="hover-text">  
               Web design is the art of creating visually appealing and user-friendly websites.  </br>
               It combines creativity and technical skills to structure layouts, choose colors, </br>
                and craft engaging experiences. A good design ensures easy navigation, responsiveness </br>
                 across devices, and alignment with the brand’s goals. It’s a blend of aesthetics and  </br>
                 functionality, aiming to captivate users while meeting their needs.  </div>
-                <p>Project 3:web design</p>
+                <p>Project 3:web design</p>-->
+    </br>
+     <section>
+       </br>  </br>
+       <!--<button onclick="addRow()">Add Row</button>-->
+       <div class="table-container">
+        <table cellspacing="0px" border="2" contenteditable="true" id="dynamicTable"> 
+          <tr>
+            <th>No</th>
+             <th>ID No</th>
+             <th>HEAD OF FAMILY</th>
+             <th>YOUR SPOUSE/NA</th>
+             <th>NUMBER OF KIDS/NA</th>
+             <th>FIRST BORN/NA</th>
+             <th>LAST BORN/NA</th>
+             <th>PROVINCE</th>
+             <th>DISTRICT</th>
+          </tr>
+          <tr> 
+             <td>1. </td>
+             <td> </td>
+             <td> </td>
+             <td> </td>
+             <td> </td>
+             <td> </td>
+             <td> </td>
+             <td> <select name="province">
+                 <option></option> 
+                 <option>  NORTHERN </option> 
+                 <option>  SOUTHERN</option> 
+                 <option>  EASTERN</option>  
+                 <option>  WESTERN</option> 
+                 <option>  KIGALI CITY</option> 
+             </select></td>
+             <td><select name="district">
+                 <option></option> 
+                 <option>  GICUMBI </option> 
+                 <option>  RULINDO</option> 
+                 <option>  MUSANZE</option>  
+                 <option>  BURERA</option> 
+                 <option>  GAKENKE</option> 
+                 <option>  HUYE</option> 
+                 <option>  RUHANGO</option> 
+                 <option>  NYAMAGABE</option>  
+                 <option>  GISAGARA</option> 
+                 <option>  MUHANGA</option> 
+                 <option>  KAMONYI </option> 
+                 <option>  NYANZA</option> 
+                 <option>  NYARUGURU</option>  
+                 <option>  KARONGI</option> 
+                 <option>  NYABIHU</option> 
+                 <option>  RUBAVU </option> 
+                 <option>  RUSIZI</option> 
+                 <option>  NGORORERO</option>  
+                 <option>  NYAMASHEKE</option> 
+                 <option>  RUTSIRO</option> 
+                 <option>  BUGESERA </option> 
+                 <option>  GATSIBO</option> 
+                 <option>  KAYONZA</option>  
+                 <option>  NGOMA</option> 
+                 <option>  NYAGATARE</option> 
+                 <option>  KIREHE </option> 
+                 <option>  RWAMAGANA</option> 
+                 <option>  NYARUGENGE</option>  
+                 <option>  KICUKIRO</option> 
+                 <option>  GASABO</option> 
+             </select> </td>
+          </tr>   
+          </table>
         </div>
-      </section>
-        <a href="index.html"> back to home</a>  
+        <button onclick="addRow()">Add Row</button>
+        <script>
+          function addRow() {
+              // Get the table element
+              var table = document.getElementById("dynamicTable");
+              
+              // Get the rows of the table (skip the header row)
+              var rows = table.getElementsByTagName('tr');
+              
+              // Create a new row
+              var newRow = table.insertRow(rows.length);  // Insert at the end of the table
+              
+              // Loop through each cell of the first row (excluding the header)
+              for (var i = 0; i < rows[0].cells.length; i++) {
+                  var newCell = newRow.insertCell(i); // Add a new cell in the new row
+  
+                  // If it's the first column, set the auto-incremented value
+                  if (i === 0) {
+                      newCell.textContent = rows.length-1; // Set value based on row count
+                  }
+                  // If it's one of the last two columns (Option columns), clone the <select> element
+                  else if (i === 7 || i === 8) {
+                      var selectElement = rows[1].cells[i].getElementsByTagName('select')[0];
+                      var clonedSelect = selectElement.cloneNode(true); // Clone the <select> element
+                      newCell.appendChild(clonedSelect); // Append the cloned <select> to the new cell
+                  } else {
+                      // Otherwise, just copy the text content for the first 7 columns
+                      var textContent = rows[1].cells[i].textContent || rows[1].cells[i].innerText;
+                      newCell.textContent = textContent; // Copy the content to the new cell
+                  }
+              }
+          }
+      </script>
+        </section>
+      </br>   </br> </br>   </br>
+
+      <center><button>save</button></center>
+  
+      </br>   </br> 
+        <a href="index.html"> back to home</a>
+      </br></br>
     </body>
 </html>
