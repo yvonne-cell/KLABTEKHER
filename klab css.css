@@ -3,7 +3,8 @@
     font-family: Arial, sans-serif;
     margin:0%;
     padding:0%;
-    background: #e6e4e4;
+    background: #939191;
+    left: 30%;
  
   } 
   @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
@@ -79,6 +80,7 @@ body{
     height:auto;
     max-width:100%;
  
+ 
   }
   .about-photo {
     height:auto;
@@ -131,33 +133,33 @@ body{
     font-weight: bold;
   }
   .hover-container {
-    position: relative;
+    position:static;
     display:inline;
-    height:auto;
-    max-width:100%;
+    height:20%;
+    width:20%;
   }
   
   .hover-container img {
-    height:auto;
-    max-width:100%;
+    height:50%;
+    width:60%;
     object-fit: cover;
   }
   
   .hover-text {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    height:auto;
-    max-width:100%;
+    top: 30%;
+    left: 30%;
+    height:10%;
+    width:40%;
     transform: translate(-50%, -50%);
-    color: white;
+    color: rgb(10, 2, 2);
     font-size:79%;
     font-weight: bold;
     display:inline-flex;
     text-align: center;
-    background: rgba(19, 1, 1, 0.6); /* Semi-transparent background */
+    background: rgba(247, 248, 248, 0.591); /* Semi-transparent background */
     padding:2%;
-    border-radius:1%;
+    border-radius:3%;
     opacity: 0; /* Hidden by default */
     transition: opacity 0.3s ease;
   }
@@ -202,8 +204,8 @@ body{
   
 
   .project img {
-    height:auto;
-    max-width:100%;
+    height:50%;
+    max-width:60%;
     object-fit: cover;
     border-radius:3%;
  
@@ -267,3 +269,6 @@ body{
     margin: 0 0%;
     text-decoration: none;
   }
+  .table-container {
+    overflow-x: auto;
+}
