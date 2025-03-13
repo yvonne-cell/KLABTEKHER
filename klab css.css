@@ -1,4 +1,4 @@
-/* styles.css */
+ 
  body {
     font-family: Arial, sans-serif;
     margin:0%;
@@ -9,31 +9,22 @@
   } 
  
 
-/* Desktop hover effect */
+ 
 body:hover {
-    background-color: #f0f0f0; /* Light gray background */
+    background-color: #f0f0f0;  
 }
 
-/* Mobile tap effect using :active */
+ 
 body:active {
-    background-color: #f0f0f0; /* Light gray background */
+    background-color: #f0f0f0; 
 }
   @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
 @media (max-width:80%) {
 body{
-   font-size:5%; /* Adjust font size for smaller screens*/
+   font-size:5%;  
 }
 }
-  /*
-  @media only screen and (max-width:50%){
-    body { 
-    font-size: 14px; line-height: 1.4; 
-    font-family: Arial, sans-serif;
-    margin: 0%;
-    padding:0%;
-    background: #000;
-}
-   }*/
+  
 
   header {
     background: #000;
@@ -66,14 +57,7 @@ body{
     text-align:start;
     
     } 
- /* .corner-image {
-    position: absolute;
-    top: 100; /* Position the image at the top */
-    /*right:0; /* Align the image to the right corner */
-    /*width:300px; /* Set the size of the image */
-    /*height: 350px;
-     background: block;
-  } */
+ 
   
   #about, #skills,#contact , #services{
     padding: 10%;
@@ -81,7 +65,7 @@ body{
   }
   #portfolio{
       padding:10%;
-    /*text-align: center;*/
+    
 
   }
   .portfolio-gallery {
@@ -96,7 +80,7 @@ body{
   .about-photo {
     height:auto;
     max-width:15%;
-    /*height: auto;    position:relative;*/
+     
     right:2%;
     top:0%;
     position:absolute;
@@ -105,11 +89,11 @@ body{
     border-radius: 50%;
   }
   .about-logo {
-    width:7%; /* Set the width */
-    height:10%; /* Set the height */
-    border-radius: 50%; /* Makes the image circular */
-    object-fit: cover; /* Ensures the image covers the circle */
-    border: 2% solid #ccc; /* Optional: adds a border      text-align:left;*/
+    width:5%; 
+    height:7%;  
+    border-radius: 50%;  
+    object-fit: cover; 
+    border: 2% solid #ccc; 
 
 
   }
@@ -119,12 +103,7 @@ body{
     gap:1%;
   }
   .skill {
-    /* border-radius: 5px;
-      font-weight: bold;
-    display:  flex;
-      text-align: start;
-      background:#f4f4f4;
-    padding: 10px 20px;*/
+  
     background-color: #fff;
     padding:0%;
     border: 0% solid #242222;
@@ -168,49 +147,17 @@ body{
     font-weight: bold;
     display:inline-flex;
     text-align: center;
-    background: rgba(247, 248, 248, 0.591); /* Semi-transparent background */
+    background: rgba(247, 248, 248, 0.591);  
     padding:2%;
     border-radius:3%;
-    opacity: 0; /* Hidden by default */
+    opacity: 0;  
     transition: opacity 0.3s ease;
   }
   
   .hover-container:hover .hover-text {
-    opacity:1; /* Show text on hover */
+    opacity:1;  
   }
- /* .hover-container {
-    position: relative;
-    display: inline-block;
-    width:55%;
-    height:40%;
-  }
-  
-  .hover-container img {
-    width:55%;
-    height: 40%;
-    object-fit: cover;
-  }
-  
-  .hover-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width:55%;
-    height:40%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 4%;
-    font-weight: bold;
-    display:inline-flex;
-    text-align: center;
-    padding: 2%;
-    border-radius: 1%;
-      .hover-container:hover .hover-text {
-    opacity:1;  Show text on hover 
-    
-  } 
-  
-      */
+ 
   
   
 
@@ -249,22 +196,7 @@ body{
     border-radius:1%;
     cursor: pointer;
   }
- /* #back-to-top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 15px;
-    cursor: pointer;
-    display: none; /* Initially hidden */
-    /*transition: opacity 0.3s; */
-
-
-/*.backtotop:hover {
-    background-color: #0056b3;}*/
+ 
 
 
   .footer {
@@ -282,4 +214,10 @@ body{
   }
   .table-container {
     overflow-x: auto;
+}
+.iframe {
+  width: 100%;  
+  height: 100vh;   
+  background-image: url('istockphoto-1401460590-612x612.jpg');
+ 
 }
